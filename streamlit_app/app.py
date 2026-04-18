@@ -3,24 +3,25 @@ import pandas as pd
 import joblib
 import plotly.express as px
 import plotly.graph_objects as go
+from pathlib import Path
 
 # ------------------------------------------------
-# PAGE CONFIG
+# BASE PATH
 # ------------------------------------------------
-st.set_page_config(
-    page_title="Real Estate AI Advisor",
-    page_icon="🏠",
-    layout="wide",
-    initial_sidebar_state="expanded"
-)
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+DATA_PATH = BASE_DIR / "data" / "processed" / "cleaned_data.csv"
+CLF_MODEL_PATH = BASE_DIR / "models" / "investment_classifier.pkl"
+REG_MODEL_PATH = BASE_DIR / "models" / "price_predictor.pkl"
 
 # ------------------------------------------------
 # LOAD DATA + MODELS
 # ------------------------------------------------
-df = pd.read_csv("data/processed/cleaned_data.csv")
+df = pd.read_csv(DATA_PATH)
 
-clf_model = joblib.load("models/investment_classifier.pkl")
-reg_model = joblib.load("models/price_predictor.pkl")
+clf_model = joblib.load(CLF_MODEL_PATH)
+reg_model = joblib.load(REG_MODEL_PATH)
+)
 
 # ------------------------------------------------
 # PREMIUM CSS
