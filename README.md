@@ -80,3 +80,27 @@ RealEstateInvestmentAdvisor/
 │
 │── requirements.txt
 │── README.md
+
+⚙️ Installation
+pip install -r requirements.txt
+▶️ Run Locally
+streamlit run streamlit_app/app.py
+📈 Business Value
+
+This project is designed to help:
+
+Home buyers choose better properties
+Investors identify profitable opportunities
+Users estimate future appreciation
+Understand city-wise market trends
+🌟 Future Improvements
+Live property API integration
+News sentiment analysis
+Mortgage / EMI calculator
+PDF investment reports
+Interactive map visualization
+Deep Learning models (GRU / Transformer)
+
+👩‍💻 Developed By
+
+Divyanshi Dhuliya
