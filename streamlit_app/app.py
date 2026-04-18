@@ -21,7 +21,6 @@ df = pd.read_csv(DATA_PATH)
 
 clf_model = joblib.load(CLF_MODEL_PATH)
 reg_model = joblib.load(REG_MODEL_PATH)
-)
 
 # ------------------------------------------------
 # PREMIUM CSS
